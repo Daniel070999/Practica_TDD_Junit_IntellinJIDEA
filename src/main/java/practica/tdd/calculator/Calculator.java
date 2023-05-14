@@ -1,6 +1,7 @@
-package tdd.calculator;
+package practica.tdd.calculator;
 
 public class Calculator {
+    private int ans;
     public int addition(int a, int b) {
         return a + b;
     }
@@ -19,5 +20,11 @@ public class Calculator {
             e.printStackTrace();
         }
         return a * b;
+    }
+    public int getAns() {
+        return ans;
+    }
+    public void setAns(int ans) {
+        this.ans = ans;
     }
 }
