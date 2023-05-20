@@ -38,4 +38,28 @@ public class CalculatorParametersTest {
         int actual = c.addition(a, b);
         assertEquals(expected, actual);
     }
+
+    /**
+     * Para el presente caso, la prueba será aprobada para la suma ya que los parámetros ingresados
+     * estan enfocados para hacer pruebas de suma, en caso de querer realizar pruebas con
+     * el resto de operaciones básicas, se debe reajustar los parámetros
+     */
+    @Test
+    public void given_parameters_when_addition_then_substraction() {
+        Calculator c = new Calculator();
+        int actual = c.substraction(a, b);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void given_parameters_when_addition_then_division() {
+        Calculator c = new Calculator();
+        int actual = c.division(a, b);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void given_parameters_when_addition_then_multiplication() {
+        Calculator c = new Calculator();
+        int actual = c.multiplication(a, b);
+        assertEquals(expected, actual);
+    }
 }
